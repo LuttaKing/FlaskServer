@@ -1,1 +1,1 @@
-web gunicorn geeni:app
+web gunicorn flaskPost:app
