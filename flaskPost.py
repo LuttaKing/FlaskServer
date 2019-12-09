@@ -14,3 +14,6 @@ def postServer():
         return "hello luttas you posted{}".format(password)
     
     return "<h1>YOU PERFORMED A GET REQUEST SO YOU GET THE GET PAGE</h1>"
+
+if __name__ == '__main__':
+    app.run()
