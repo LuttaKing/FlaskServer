@@ -9,7 +9,7 @@ def postServer():
         password=request.get_json()
                 
         json_string = json.dumps(password)
-        print(json_string)
+        print("denny initialized"+json_string)
 
         return "hello luttas you posted{}".format(password)
     
