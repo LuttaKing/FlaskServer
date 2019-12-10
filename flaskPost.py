@@ -8,11 +8,13 @@ app = Flask(__name__)
 def postServer():
     if request.method=="POST":
         password=request.get_json()
+        json_string = json.dumps(password)
         try:
             json_string = json.dumps(password["key"])
             print("denny initialized "+ str(json_string))
             return "hello luttas you posted{}".format(password)
         except:
+            print("YOU POSTED {}".format(str(json_string)))
             return "Key not in your post request"
             
         
