@@ -9,7 +9,7 @@ def postServer():
     if request.method=="POST":
         password=request.get_json()
                 
-        json_string = json.dumps(password)
+        json_string = json.dumps(password["key"])
         print("denny initialized "+ str(json_string))
 
 
