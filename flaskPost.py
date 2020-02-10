@@ -11,7 +11,7 @@ def postServer():
         json_string = json.dumps(password)
         try:
             json_string = json.dumps(password["key"])
-            print("denny initialized "+ str(json_string))
+            print("denny initialised "+ str(json_string))
             return "hello luttas you posted{}".format(password)
         except:
             print("YOU POSTED {}".format(str(json_string)))
