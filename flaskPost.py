@@ -15,7 +15,7 @@ def postServer():
             return "hello luttas you posted{}".format(password)
         except:
             print("YOU POSTED {}".format(str(json_string)))
-            return "Key not in your post request"
+            return "Keys nots in your post request"
             
         
 
